@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercados</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Busque um produto">
+            <button id="clearSearchButton">Limpar busca</button>
+            <button id="searchButton">Buscar</button>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul class="lista">
+            <h3 class="lista-titulo">Mercados</h3>
+            <input type="radio" id="todos" class="lista-categoria" name="market" value="MostrarTodos" checked>
+            <label class="label" for="todos">Mostrar tudo</label>
+            <input type="radio" id="armazem" class="lista-categoria" name="market" value="Armazém do Grão">
+            <label class="label" for="armazem">Armazém do Grão</label>
+            <input type="radio" id="itaipava" class="lista-categoria" name="market" value="Bramil Itaipava">
+            <label class="label" for="itaipava">Bramil Itaipava</label>
+            <input type="radio" id="petropolis" class="lista-categoria" name="market" value="Bramil Petrópolis">
+            <label class="label" for="petropolis">Bramil Petrópolis</label>
+            <input type="radio" id="dib" class="lista-categoria" name="market" value="Dib">
+            <label class="label" for="dib">Dib</label>
+            <input type="radio" id="redeconomia" class="lista-categoria" name="market" value="Rede Economia">
+            <label class="label" for="redeconomia">Rede Economia</label>
+        </ul>
+        <ul class="lista">
+            <h3 class="lista-titulo">Categorias</h3>
+            <input type="radio" id="todas" class="lista-categoria" name="categorias" value="Todas" checked>
+            <label class="label" for="todas">Mostrar tudo</label>
+            <input type="radio" id="biscoitos" class="lista-categoria" name="categorias"
+                value="Biscoitos, Doces e Matinais">
+            <label class="label" for="biscoitos">Biscoitos, Doces e Matinais</label>
+            <input type="radio" id="bebidas" class="lista-categoria" name="categorias" value="Bebidas">
+            <label class="label" for="bebidas">Bebidas</label>
+            <input type="radio" id="carnes" class="lista-categoria" name="categorias" value="Carnes">
+            <label class="label" for="carnes">Carnes</label>
+            <input type="radio" id="congelados" class="lista-categoria" name="categorias" value="Congelados">
+            <label class="label" for="congelados">Congelados</label>
+            <input type="radio" id="hortifruti" class="lista-categoria" name="categorias" value="Hortifruti">
+            <label class="label" for="hortifruti">Hortifruti</label>
+            <input type="radio" id="frios" class="lista-categoria" name="categorias" value="Frios e Laticínios">
+            <label class="label" for="frios">Frios e Laticínios</label>
+            <input type="radio" id="higiene" class="lista-categoria" name="categorias" value="Higiene">
+            <label class="label" for="higiene">Higiene</label>
+            <input type="radio" id="limpeza" class="lista-categoria" name="categorias" value="Limpeza">
+            <label class="label" for="limpeza">Limpeza</label>
+            <input type="radio" id="mercearia" class="lista-categoria" name="categorias" value="Mercearia">
+            <label class="label" for="mercearia">Mercearia</label>
+            <input type="radio" id="padaria" class="lista-categoria" name="categorias" value="Padaria">
+            <label class="label" for="padaria">Padaria</label>
+            <input type="radio" id="utilidades" class="lista-categoria" name="categorias" value="Utilidades e Pet">
+            <label class="label" for="utilidades">Utilidades e Pet</label>
+        </ul>
+    </div>
+
+    <div class="content">
+        <p id="totalProdutos">0 produtos</p>
+        <div id="produtos-container" class="grid-container"></div>
+    </div>
+
+    <footer class="rodape">
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
